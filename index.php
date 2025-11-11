@@ -1,23 +1,11 @@
 <?php
 
-class LuasLingkaran {
+require_once('./LuasLingkaran.php'); //cara panggil file
 
-    public const phi = 3.14;
-    public int $jari;
+use App\Math\LuasLingkaran; //panggil class
 
-    public function tampil($nama = 'ban') {
-        $rumus = LuasLingkaran::phi * ($this->jari * $this->jari);
-        echo "Lingkaran {$nama} hasilnya adalah: {$rumus}";
-    }
-
-    public static function testing() {
-        echo "<br/>";
-        echo "ini dari static";
-    }
-}
-
-$lingkaran = new LuasLingkaran();
-$lingkaran->jari = 12;
+$lingkaran = new LuasLingkaran(10);
+// $lingkaran->jari = 12;
 $lingkaran->tampil('roda'); //panggil method tampil
 
 LuasLingkaran::testing(); //panggil static method
