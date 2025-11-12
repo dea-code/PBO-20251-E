@@ -10,5 +10,4 @@ $lingkaran = new LuasLingkaran();
 $lingkaran->jari = 12;
 
 $rumus = LuasLingkaran::phi * ($lingkaran->jari * $lingkaran->jari);
-
 echo "Hasilnya adalah: " . $rumus;
